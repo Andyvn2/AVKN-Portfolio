@@ -1,0 +1,7 @@
+{
+	"name": "Portfolio",
+	"description": "Portfolio APp",
+	"repository": "https://git.heroku.com/boiling-beach-92820.git",
+	"logo": "https://boiling-beach-92820.herokuapp.com/",
+	"keywords": ["node", "express", "ejs", "static"]
+}
