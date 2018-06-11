@@ -31,7 +31,48 @@
 </head>
 
 
-<body id="page-top">
+<body id="page-top" onload="$.when(typeWriterName()).then(Upcoming())">
+    <script type="text/javascript">
+var i = 0;
+var x = 0;
+var text= "A young technology enthusiast ready to explore through innovation."
+var name = "Andy Van Khoa Nguyen"
+var speed1 = 100;
+var speed2 = 50
+var myDesc;
+
+
+
+
+
+function typeWriterName() {
+    if(x < name.length ){
+        document.getElementById("name").innerHTML += name.charAt(x);
+        x++;
+        setTimeout(typeWriterName, speed1)
+    }
+    // myDesc = setTimeout(typeWriter(), 3000)
+    // setTimeout(typeWriter(), 5000)
+    // if(i < text.length ) {
+    //     document.getElementById("demo").innerHTML += text.charAt(i);
+    //     i++;
+    //     setTimeout(typeWriter, speed);
+    // }
+
+}
+function Upcoming(){
+    setTimeout(typeWriter(), 6000)
+}
+
+function typeWriter(){
+    if(i < text.length ) {
+        document.getElementById("demo").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed2);
+    }
+}
+
+</script>
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -64,9 +105,12 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1 id="homeHeading">Andy Van Khoa Nguyen</h1>
+                <!-- <h1 id="homeHeading">Andy Van Khoa Nguyen</h1> -->
+                <h1 id="homeHeading"></h1>
+                <h1 id="name"></h1>
                 <hr>
-                <p>A young technology enthusiast ready to explore through innovation.</p>
+                <p id="demo" style="background-color: gray; opacity: .75;"></p>
+                <!-- <p>A young technology enthusiast ready to explore through innovation.</p> -->
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
             </div>
         </div>
