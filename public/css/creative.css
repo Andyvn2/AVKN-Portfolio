@@ -415,3 +415,23 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222222;
 }
+
+.projects{
+  vertical-align: top;
+  width: 310px;
+  height: 480px;
+  display: inline-block;
+  border-style: solid;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.projectshackathon{
+  vertical-align: top;
+  width: 310px;
+  height: 675px;
+  display: inline-block;
+  border-style: solid;
+  border-radius: 5px;
+  margin-left: 20px;
+}
